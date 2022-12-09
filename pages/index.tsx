@@ -24,7 +24,7 @@ const Home: NextPage = () => {
             subscriptions for any services like salaries, rewards or anything.
           </p>
           <Link href="/create">
-            <button className="bg-500 creat-border px-10 py-3 rounded-lg mt-5 uppercase">
+            <button className="bg-red-400 creat-border px-10 py-3 rounded-lg mt-5 uppercase">
               Create
             </button>
           </Link>

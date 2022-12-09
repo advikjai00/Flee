@@ -81,7 +81,7 @@ export default function MyFlees() {
     <div className="text-white px-20 font-['Fasthand'] overflow-hidden mt-4">
       <div className="flex gap-28 items-center text-2xl justify-center ">
         <button
-          className="px-8 py-2 rounded-2xl bg-blue-500"
+          className="px-7 py-2 rounded-2xl bg-orange-300"
           onClick={() => {
             setReceiver(false);
           }}
@@ -89,7 +89,7 @@ export default function MyFlees() {
           Your Flees
         </button>
         <button
-          className="px-8 py-2  rounded-2xl bg-yellow-500"
+          className="px-7 py-2  rounded-2xl bg-orange-300 "
           onClick={() => {
             setReceiver(true);
           }}
@@ -97,7 +97,7 @@ export default function MyFlees() {
           Receiving Flees
         </button>
       </div>
-      <div className="border-0 border-white mt-4 h-[32rem] p-4 bg-gray-900">
+      <div className="border-0 rounded-2xl border-white mt-4 h-[30rem] p-4 bg-gray-800">
         <div className="flex text-xl px-10">
           <p className="w-96">{receiver ? "Sender" : "Receiver"}</p>
           <p className="w-20 ml-10">Amount</p>
