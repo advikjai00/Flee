@@ -80,9 +80,9 @@ export default function Create() {
             data["senderAddress"] = address;
             storeContent(data);
             const contract = new ethers.Contract(contractAddress, abi, signer || undefined);
-            const tx = await contract.createStream(receiverAddress, tokenAddress, tokenAmount, startTimestamp, endTimestamp);
+            const tx = await contract.createFlee(receiverAddress, tokenAddress, tokenAmount, startTimestamp, endTimestamp);
             await tx.wait();
-            toast("Stream Created Successfully");
+            toast("Flee Created Successfully");
         }
         catch(err){
             alert(err);
@@ -91,7 +91,7 @@ export default function Create() {
     return (
         <div className=" text-white px-60 pt-10">
             <div className="flex items-center flex-col">
-                <h1 className="text-3xl font-['Fasthand']">Create  stream</h1>
+                <h1 className="text-3xl font-['Fasthand']">Create flee</h1>
             </div>
             <div className="flex gap-28">
                 <div className="py-3 w-1/2">
