@@ -12,7 +12,7 @@ export default function Navbar() {
         <Link href="/create">
           <button className="font-['Fasthand'] text-2xl">Create</button>
         </Link>
-        <Link href="/myStreams">
+        <Link href="/myFlees">
           <button className="font-['Fasthand'] text-2xl">My flee</button>
         </Link>
         <ConnectButton />

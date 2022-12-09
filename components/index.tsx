@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function subgraphQuery(query : any) {
   try {
-    const SUBGRAPH_URL = "https://api.thegraph.com/subgraphs/name/dinesh11515/stream";
+    const SUBGRAPH_URL = "https://api.thegraph.com/subgraphs/name/dinesh11515/stream"; //graph url change kerna hai
     const response = await axios.post(SUBGRAPH_URL, {
       query,
     });
@@ -16,9 +16,9 @@ export async function subgraphQuery(query : any) {
   }
 }
 
-export function FETCH_STREAMS_BY_RECEIVER(address: string) {
+export function FETCH_FLEES_BY_RECEIVER(address: string) {
     return `query {
-        streams(where: {receiver: "${address}"}) {
+        flees(where: {receiver: "${address}"}) {
             id
             amount
             receiver
@@ -32,9 +32,9 @@ export function FETCH_STREAMS_BY_RECEIVER(address: string) {
       }`;
 }
 
-export function FETCH_STREAMS_BY_SENDER(address: string) {
+export function FETCH_FleeS_BY_SENDER(address: string) {
     return `query {
-        streams(where: {sender: "${address}"}) {
+        flees(where: {sender: "${address}"}) {
             id
             amount
             receiver

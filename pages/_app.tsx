@@ -15,7 +15,7 @@ const { chains, provider } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "Stream App", // Flee App
+  appName: "Flee App", // Flee App
   chains,
 });
 
