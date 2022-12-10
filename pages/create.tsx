@@ -121,7 +121,7 @@ export default function Create() {
   return (
     <div className=" text-light px-60 pt-10">
       <div className="flex items-center flex-col">
-        <h1 className="text-3xl font-['Fasthand']">Create flee</h1>
+        <h1 className="text-3xl font-['Fasthand'] font-bold">Create flee</h1>
       </div>
       <div className="flex gap-28">
         <div className="py-3 w-1/2">

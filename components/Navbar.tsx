@@ -6,15 +6,19 @@ export default function Navbar() {
       <div className="flex gap-10">
         <Link href="/">
           {/* bg-500 px-10 py-3 rounded-lg mt-5 uppercase */}
-          <button className="font-['Fasthand'] text-3xl">Flee</button>
+          <button className="font-['Fasthand'] font-bold text-3xl">Flee</button>
         </Link>
       </div>
       <div className="flex items-center gap-10">
         <Link href="/create">
-          <button className="font-['Fasthand'] text-2xl">Create</button>
+          <button className="font-['Fasthand'] font-bold text-2xl">
+            Create
+          </button>
         </Link>
         <Link href="/myFlees">
-          <button className="font-['Fasthand'] text-2xl">My flee</button>
+          <button className="font-['Fasthand'] font-bold text-2xl">
+            My flee
+          </button>
         </Link>
         <ConnectButton />
       </div>

@@ -18,13 +18,13 @@ const Home: NextPage = () => {
       </Head>
       <div className="flex items-center px-40 justify-between gap-20">
         <div>
-          <p className="text-5xl italic mb-5">Flee tokens.</p>
+          <p className="text-5xl italic mb-5 font-bold">Flee tokens.</p>
           <p className="">
             Flee is an token streaming protocol for handling streamed
             subscriptions for any services like salaries, rewards or anything.
           </p>
           <Link href="/create">
-            <button className="bg-red-400 creat-border px-10 py-3 rounded-lg mt-5 uppercase">
+            <button className="bg-red-400 font-bold-700 creat-border px-10 py-3 rounded-lg mt-5 uppercase">
               Create
             </button>
           </Link>
